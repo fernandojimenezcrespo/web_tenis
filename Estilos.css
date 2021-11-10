@@ -1,0 +1,2105 @@
+body 
+{
+/*	text-align: center;*/
+	font-size: 11px;
+	padding:0 0 0 0;
+	margin: 0 0 0 0;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;/*Tahoma,Arial,Helvetica,sans-serif;*/
+	/*font-family: "Trebuchet MS";*/
+/*	background-color: #F5EDE3;*/
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+a {
+	color:#0000FF;
+	text-decoration:none;
+	}
+
+a img 
+{
+	border: none;
+}
+
+a:hover img 
+{
+	background-color: #cae39a;
+	border:1px solid;
+	border-right:none;
+	border-left:none;
+	border-top: none;
+	border-bottom: none;
+}
+
+a:hover {
+	border:0px solid;
+	border-right:none;
+	border-left:none;
+	background-color:#72A8EE;	
+	color: #FFFFFF;
+}
+ 
+
+
+.SoloLectura
+{
+	background-color: #D4FFFF;
+}
+
+
+
+.Separador
+{
+	background-color: #5C743D;
+	width: 100%;
+	height: 4px;
+	margin: 0 0 0 0;
+	border-top-style: none;
+}
+
+.enlace
+{
+		cursor: pointer;
+}
+
+.enlace:hover {
+
+	border:1px solid;
+
+	border-right:none;
+
+	border-left:none;
+
+	/*font-weight:bold;*/
+	
+	background-color:#cae39a
+
+	}
+
+
+.TablaConBordes
+{
+border-width: 1px;
+border-color: #5C743D; /*Maroon;*/
+border-style: solid;
+border-bottom-style: solid;
+background-color: #E1D4C0; /*#99CC66; /*Verde oscuro*/
+}
+
+.Cabecera 
+{
+	color: White;
+	background-color: #E1D4C0;
+	color: Black;
+	font-weight: bold;
+	/*background-image: url(imagenes/fondo_cabecera.png);*/
+	background-repeat: repeat-x;
+	font-size: 14px;
+	padding: 3px;
+}
+
+/*
+input, option, textarea
+{
+border: 1px inset #c68989;
+	background-color: #f2eacd;
+	}
+*/
+
+.textoinfo 
+{
+	color: #006600;
+background-color: #ebf2e8;
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-top-color: #9bd19a;
+border-right-color: #9bd19a;
+border-bottom-color: #9bd19a;
+border-left-color: #9bd19a;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+
+.textoerror 
+{
+color: #a61f2d;
+background-color: #f2ebeb;
+background-image: none;
+background-repeat: repeat;
+background-attachment: scroll;
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-top-color: #dc5455;
+border-right-color: #dc5455;
+border-bottom-color: #dc5455;
+border-left-color: #dc5455;
+width: 300px;
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+text-align: center;
+margin-top: 10px;
+margin-right: auto;
+margin-bottom: 10px;
+margin-left: auto;
+}
+
+.GridFilaImpar 
+{
+	background-color: #E2F3FD;
+	color: black;
+	padding: 3 3 3 3;
+	border: none 0px black;
+}
+
+.GridFilaPar
+{
+	background-color: white;
+	border: none;
+	color: Black;
+	padding: 3 3 3 3;
+	border: none 0px black;
+}
+
+.GridCabecera th
+{
+	background-color: #E1D4C0;
+}
+.GridCabecera th a
+{
+	color:Black;
+}
+
+
+.Ganador
+{
+	font-weight: bold
+}
+
+
+.divCalendario .Parcial
+{
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 40px;
+	min-width: 40px;
+}
+
+.divCalendario .ParcialDescansa
+{
+	background-color: #f5ede3;
+}
+
+.divCalendario .divJornada
+{
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+
+.divCalendario .Cabecera
+{
+	padding: 3px 3px 3px 5px;
+	width: 750px;
+	font-size: 12px;
+}
+
+.divCalendario .Manga
+{
+	width: 50px;
+	text-align: center;
+	border: solid 1px;
+}
+
+.divCalendario .FilaMangas
+{
+	text-align: center;
+}
+
+.divCalendario .FilaLocal td
+{
+	border-top: solid 2px;
+}
+
+.divCalendario .FilaVisitante td
+{
+	border-bottom: solid 2px;
+}
+
+.divCalendario .NumJornada
+{
+}
+
+.divCalendario .divFechaJornada
+{
+	text-align: center;
+}
+
+.divCalendario .IntroResultados
+{
+	text-align: center;
+}
+
+.divCalendario .HojaResultados
+{
+	text-align: center;
+}
+
+
+.divCalendario .NoPresentado
+{
+	font-size: x-small;
+	padding: 3px 3px 3px 3px;
+}
+
+.divCalendario .NoPresentado .CasillaX
+{
+	border: solid 1px;
+	padding: 5px 10px 5px 10px;
+	margin-right: 5px;
+}
+
+
+.divCalendario .CompetidorLocal
+,.divCalendario .CompetidorVisitante
+{
+	width: 220px;
+	padding: 3px 5px 3px 5px;
+}
+
+.divCalendario .CompetidorLocal a
+,.divCalendario .CompetidorVisitante a
+{
+	display: block;
+	color: inherit;
+}
+
+.divCalendario .CompetidorLocal a:hover
+,.divCalendario .CompetidorVisitante a:hover
+{
+}
+
+
+.divCalendario .FechaPartido
+{
+	width: 100px;
+	text-align: center;
+}
+.divCalendario .FechaPartido a
+{
+	width: 100px;
+	display: block;
+	height: 100%;
+}
+
+.divCalendario .HoraPartido
+{
+	width: 60px;
+	text-align: center;
+}
+.divCalendario .HoraPartido a
+{
+	width: 60px;
+	display: block;
+}
+
+.divCalendario .CronicaPartido a
+{
+	cursor: pointer;
+}
+
+.divCalendario .FormatoResultadoCentro .CompetidorLocal
+{
+	text-align: right;
+}
+
+.divCalendario .Arbitro
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.divCalendario .Lugar
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*
+.NuevoResultado .CompetidorLocal
+{
+	background-image: url('imagenes/NuevoResultado.png');
+	background-repeat: no-repeat;
+}
+*/
+
+.divConfiguracionTitulo
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #aaaaaa;
+	font-size: 150%;
+	margin-bottom: 5px;
+}
+
+.divConfiguracion
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	overflow:hidden;
+	height: 100%;
+}
+
+.divConfiguracion .divCabecera
+{
+	font-weight: bold;
+	width: 30%;
+	padding-right: 40px;
+	float: left;
+	background-image: url(imagenes/Triangulo.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+}
+
+.divConfiguracion .divCuerpo
+{
+	float:left;
+	width: 60%;
+}
+
+.divComentario
+{
+	font-size: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 18px;
+	background-image: url(imagenes/Comentario.gif);
+	background-position: left 3px;
+	background-repeat: no-repeat;
+}
+
+.divConfiguracion .divConfiguracionGrabar
+{
+	/* Debería ser lo mismo que cabecera.width*/
+	padding-left: 40%;
+	
+}	
+
+
+.divLoginTabla .boton
+{
+	height: 28px;
+	font-size:95%;
+}
+	
+
+.boton
+{
+  cursor:pointer;
+  border-bottom:solid 2px #000;
+  border-right:solid 2px #000;
+  border-top:solid 1px #336699;
+  border-left:solid 1px #336699;
+  background-color:#002255;
+  color:#fff;
+  text-decoration:none;
+  padding: 5px;
+  font-weight:bold;
+}
+
+.boton.pequeno
+{
+	font-size: 8px;
+}
+
+.boton:active
+{
+	background-color: #004499;
+/*
+	border:2px solid #004499;
+*/
+}
+a.boton:hover
+{
+	background-color: #004499;
+	border:1px solid #004499;
+}
+
+a.boton
+{
+    line-height: 30px;
+}    
+
+/*
+.divConfiguracion th
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eeeeee;
+	margin-right: 0;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+.divConfiguracion td
+{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eeeeee;
+	vertical-align: top;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+
+
+#tabConfiguracion th
+{
+	 text-align: left;
+	 padding-right: 50px;
+	 width: 250px;
+}
+
+#tabConfiguracion .ComentarioConfig
+{
+	color: #333333;
+	padding-top: 0px;
+}
+
+#tabConfiguracion .Boton
+{
+  cursor:pointer;
+  border-bottom:solid 2px #000;
+  border-right:solid 2px #000;
+  border-top:solid 1px #336699;
+  border-left:solid 1px #336699;
+  background-color:#002255;
+  color:#fff;
+  font-size:105%;
+  text-decoration:none;
+  padding:.4em;
+  font-weight:bold;
+}
+*/
+
+.divPanelControl
+{
+	border: solid 2px #E1D4C0;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.divPanelControl .divPanelControlCabecera
+{
+	width: 100%;
+}
+	
+.divPanelControl .divPanelControlTitulo
+{
+	font-size: 125%;
+}
+
+.divPanelControl .divPanelControlNombreLiga
+{
+	font-weight: bold;
+	width: 60%;
+	font-size: 110%;
+}
+
+
+
+.divPanelControl .divPanelControlJornada
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	float:left;
+}	
+
+.divPanelControl .divPanelControlOrganizador
+{
+	float:right;
+	width: 200px;
+	height: 20px;
+}	
+
+
+.divPanelControl .divComandosGenerales
+{
+	font-size: 110%;
+	padding: 2px 2px 2px 18px;
+	background-image: url(imagenes/nuevo.gif);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left center;
+	float:right;
+}
+
+.divPanelControl .divPanelControlItem
+{
+	border-top: solid 1px #C0A298;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.divPanelControl .divPanelControlComandosLiga
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	clear: both;
+}
+
+#divPanelControlMisLigas
+{
+	width: 80%;
+}
+
+.divPanelControl .divPanelControlComandoLiga
+, .divMenuLiga .Clasificacion
+, .divMenuLiga .Calendario
+, .divMenuLiga .Configurar
+, .divMenuLiga .Participantes
+, .divMenuLiga .Borrar
+, .divMenuLiga .Comunicado
+, .divMenuLiga .PanelControl
+, .divMenuLiga .CuadranteResultados
+, .divMenuLiga .Estadisticas
+{
+	padding-left: 18px;
+	padding-right: 10px;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left center;
+}
+
+.divPanelControl .Clasificacion, .divMenuLiga .Clasificacion
+{
+	background-image: url(imagenes/Clasificacion.gif);
+	padding-top: 5px;
+}
+
+.divPanelControl .Calendario, .divMenuLiga .Calendario
+{
+	background-image: url(imagenes/Calendario.gif);
+	padding-top: 5px;
+}
+
+.divPanelControl .CuadranteResultados, .divMenuLiga .CuadranteResultados
+{
+	background-image: url(imagenes/CuadranteResultados.gif);
+	padding-top: 5px;
+}	
+
+.divPanelControl .Configurar, .divMenuLiga .Configurar
+{
+	background-image: url(imagenes/Configurar.gif);
+	padding-top: 5px;
+}
+
+.divPanelControl .Participantes, .divMenuLiga .Participantes
+{
+	background-image: url(imagenes/Participantes.gif);
+	padding-top: 5px;
+}
+
+.divPanelControl .PanelControl, .divMenuLiga .PanelControl
+{
+	background-image: url(imagenes/PanelControl.gif);
+	padding-top: 5px;
+}
+
+.divPanelControl .Comunicado, .divMenuLiga .Comunicado
+{
+	background-image: url(imagenes/Comunicado.gif);
+	padding-top: 5px;
+}
+
+.divPanelControl .Borrar, .divMenuLiga .Borrar
+{
+	background-image: url(imagenes/Borrar.gif);
+	padding-top: 5px;
+}
+
+.divPanelControl .Estadisticas, .divMenuLiga .Estadisticas
+{
+	background-image: url(imagenes/Estadisticas.png);
+	padding-top: 5px;
+}
+
+.divPanelControl .Comunicado
+{
+	background-image: url(imagenes/Comunicado.gif);
+	padding-top: 5px;
+}
+
+.divCabeceraPagina a:hover
+{
+	color: #FFFFFF;
+}
+
+.divCabeceraPagina
+{
+	background-color: #104386;
+	height: 50px;
+	color: White;
+	width: 100%;
+}
+
+.divCabeceraPagina .divTituloPagina
+{
+	font-size: 22px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	vertical-align: top;
+}
+
+.divCabeceraPagina .divTituloNumeros
+{
+	padding-left: 10px;
+	font-size: small;
+}
+
+.divCabeceraPagina .divTituloPagina a:hover
+{
+	background-color:inherit;
+	color: White;
+}
+
+.divCabeceraPagina a
+,.divMenuMaster a
+{
+	color: White;
+}
+
+.divMenuMaster
+{
+	background-color: #215497;
+	border-bottom: solid 5px #215497;
+	margin-bottom: 0px;
+	z-index: 0;
+	height: 20px;
+}
+
+.divMenuMaster a:hover
+{
+	color: #FFFFFF;
+}
+
+.divMenuMaster .divMenuMasterItem
+{
+	padding-left: 18px;
+	padding-right: 10px;
+	margin-left: 5px;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left center;
+	float: left;
+}
+
+.divMenuMaster .divMenuMasterItem.divInicio
+{
+	background-image: url(imagenes/Inicio.gif);
+}
+
+.divMenuMaster .divMenuMasterItem.divBuscar
+{
+	background-image: url(imagenes/Buscar.gif);
+}
+
+.divMenuMaster .divMenuMasterItem.divCrearLiga
+{
+	background-image: url(imagenes/Nuevo.gif);
+}
+
+.divMenuMaster .divMenuMasterItem.divMisLigas
+{
+	background-image: url(imagenes/MisLigas.gif);
+}
+
+.divMenuMaster .divMenuMasterItem.divComunicadoMaster
+{
+	background-image: url(imagenes/Comunicado.gif);
+}
+
+.divMenuMaster .divMenuMasterItem.divVersionMovil
+{
+	background-image: url('imagenes/Movil.png');
+}
+
+.divMenuMaster .divMenuMasterItem.divVersionEscritorio
+{
+	background-image: url('imagenes/Escritorio.png');
+}
+
+.divMenuMaster .divMenuMasterItem.divMisDatos
+{
+	background-image: url(imagenes/Usuario.gif);
+}
+
+.divMenuMaster .divMenuMasterItem.divContactar
+{
+	background-image: url(imagenes/Contactar.gif);
+}
+
+.divMenuMaster .divMenuMasterItem.divFAQ
+{
+	background-image: url(imagenes/FAQ.gif);
+}
+
+.divMenuMaster .divMenuMasterItem.divIdioma
+{
+	text-align: right;
+}
+
+.divMenuMaster .divMenuMasterItem.divGooglePlus1
+{
+	text-align: right;
+}
+
+.divMenuMaster .divMenuMasterItema
+{
+	color: White;
+}
+
+
+
+
+.divMenuLiga
+{
+	height: 25px;
+}
+
+.divMenuLiga .NombreLiga, .divMenuLiga .NombreLiga select
+{
+	font-size: 15px;
+	color: #FFFFFF;
+	width: 270px;
+	height: 25px;
+	overflow: hidden;
+	padding-left: 5px;
+}
+
+.divMenuLigaContenedor, .divMenuLiga .NombreLiga select	
+{
+	background-color: #3265A8;
+	color: White;
+}
+
+.divMenuLiga .NombreLiga select
+{
+	border: solid 1px #5285C8;
+}
+
+.divMenuLigaContenedor
+{
+	width: 100%;
+	background-color: #3265A8;
+	color: White;
+	margin-bottom: 5px;
+}
+
+.divMenuLiga .divMenuLigaItem
+,.divMenuLiga .NombreLiga
+{
+    float:left;
+}
+
+.divMenuLiga a
+{
+	color: White;
+	/*font-weight:bold;*/
+}
+
+.divMenuLiga a:hover
+{
+	color: #FFFFFF;
+}
+
+.EtiquetaParticipante
+{
+	padding-right: 10px;
+}
+
+
+.tabParticipantes td
+{
+/*	border-top: solid 2px #E1D4C0;*/
+	padding-bottom: 5px;
+	padding-top: 5px;
+}	
+
+.tabParticipantes td
+{
+	padding-right: 5px;
+}
+
+.tabParticipantes .boton
+{
+	font-weight: normal;
+	font-size: 10px;
+}
+
+.tabParticipantes input
+{
+	font-size: 11px;
+}
+
+.tabParticipantes
+{
+	border-spacing: 0px;
+	margin-top: 10px;
+}
+.TablaClasifica .colPosicion
+{
+	width: 25px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.TablaClasifica .colNombre
+{
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	width: 250px;
+}
+
+.TablaClasifica .colImagen img
+{
+	width: 16px;
+	height: 16px;
+}
+
+.TablaClasifica .colDato
+{
+	text-align: right;
+	padding-left: 5px;
+	width: 30px;
+}
+
+.divNombreLocalVisitante
+{
+	width: 250px;
+	text-align: right;
+}
+
+.Parciales input
+{
+	width: 30px;
+}
+
+.divPartido .NoPresentado
+{
+	font-size: x-small;
+}
+
+.PuntosExtra
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.PuntosExtra span
+{
+	font-size: x-small;
+}
+
+.PuntosExtra input
+{
+	width: 30px;
+}
+
+
+.divPartido
+{
+	border-top: solid 2px #888888;
+	/* OJO: si se cambia esto, hay que cambiar lTopCronica */
+	/* Quito esto porque no va bien cuando los nombres son muy largos */
+	/*height: 60px;*/	
+	padding-right: 10px;
+}
+
+.tabLigas
+{
+	border-collapse:collapse; 
+	border: none;
+}
+
+.tabLigas td
+{
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
+}
+
+.tabLigas .NombreLiga
+{
+	width: 250px;
+}
+
+.tabLigas .NombreLiga a
+{
+	display: block;
+	padding: 5px 3px 5px 3px;
+}
+
+.tabLigas th
+{
+	font-size: 85%;
+	padding: 5px 5px 5px 5px;
+	margin: 0px 0px 0px 0px;
+}
+
+.tabLigas .NumParticipantes
+{
+	text-align: center;
+}
+
+.tabLigas .Jornada
+{
+	text-align: center;
+}
+
+.tabLigas .Organizador
+{
+	
+}
+
+.tabLigas .LigaActiva
+{
+	width: 80px;
+}
+
+
+
+.ListaLigas
+{
+	width: 100%;
+}
+
+.ListaLigas .ListaLigasItem
+{
+    width:100%;
+}
+
+.ListaLigas .ListaLigasItem .EtiquetaOrganiza
+{
+	font-size: x-small;
+}
+
+.ListaLigas .ListaLigasItem .Organizador
+{
+	font-size: 11px;
+	padding-bottom: 10px;
+}
+
+.ListaLigas .ListaLigasItem .NombreLiga
+{
+	font-size: 14px;
+}
+
+.ListaLigas a
+{
+	display: block;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.ListaLigas .ListaLigasItem .Disciplina
+{
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left center;
+	padding-left: 22px;
+	width: 80px;
+}	
+
+.ListaLigas .ListaLigasItem .NombreYOrganizador
+{
+    padding-left: 3px;
+}
+
+.ListaLigas .ListaLigasItem .Activa
+{
+    width: 60px;
+}
+
+.ListaLigas .ListaLigasItem .NumParticipantes
+{
+	width: 120px;
+}
+
+
+
+.divError
+{
+    width: 500px;
+    left:50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -50px;
+	text-align: center;
+	border: solid 1px blue;
+	background-color: white;
+	background-image: url(imagenes/error.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+}	
+
+.divErrorAbs
+{
+	position: absolute;
+}
+
+.divErrorSta
+{
+	position: static;
+}
+
+.divError .divErrorTexto
+{
+	padding: 0px 10px 0px 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}	
+
+.divError .divErrorTitulo
+{
+	background-color: Blue;
+	color: White;
+	height: 20px;
+}
+
+.divError .divErrorBoton
+{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}	
+
+
+/********************* INTRO ******************/
+
+.divIntro .divCabecera
+{
+	/*background-color: #4073B6;
+	color: White;*/
+	font-size: 100%;
+	font-weight: bold;
+	padding: 5px 5px 5px 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	background-image: url(imagenes/Triangulo.gif);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+.divIntro .divCuerpo
+{
+	margin-left: 20px;
+	margin-bottom: 10px;
+	padding-left: 0px;
+	font-size: 97%;
+}
+
+
+.divIntro .divCabeceraFAQ
+{
+	background-color: #E1D4C0;
+	color: black;
+	font-size: 120%;
+	padding: 5px 5px 5px 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	background-image: url(imagenes/faq.gif);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+
+.divIntro .divCabeceraFAQ a
+{
+	color: Black;
+}
+
+
+
+.divIntro .HayPistaLibre
+{
+	background-color: #315795;
+	padding: 5px;
+	width: 400px;
+	padding-left: 5px;
+	background-image: url('imagenes/Cuadrante.png');
+	background-repeat: no-repeat;
+	background-position: 230px top;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: solid 5px #214775;
+}
+
+.divIntro .HayPistaLibre a
+{
+	font-size: 12px;
+	color: #EEEEEE;
+}
+
+.divIntro .HayPistaLibre .LinkHPL
+{
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.divIntro .HayPistaLibre a:hover
+{
+	background-color: inherit;
+	color: #CCCCCC;
+}
+
+
+/****************/
+
+#PanelIzquierdoGeneral
+{
+	width: 50%;
+	vertical-align: top;
+	border-right: solid 1px #888888;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.PanelDerechoGeneral
+{
+	padding-left: 10px;
+	vertical-align: top;
+	width: 50%;
+}
+
+#divTodo
+{
+	margin: 0 0 0 0;
+	text-align: left;
+	/*background-color: #F7F8F3;*/
+	/*background-color: #FAFAFA;*/
+	border-bottom: solid 1px;
+}
+
+.captcha label
+{
+	visibility: collapse;
+	height: 0px;
+	width: 0px;
+}
+
+.captcha span
+{
+	visibility: collapse;
+	height: 0px;
+}
+
+.divGrabar
+{
+	text-align: center;
+}
+
+.divLoginContenedor
+{
+	padding: 0px 3px 0px 0px;
+}
+
+.divLoginTabla
+{
+	float:right; /*Esto es para que mueva toda la tabla hacia la derecha, para que funcione en IE y en FF */
+	text-align: right;
+	font-size: 11px;
+}	
+
+.divLoginTabla input
+{
+	font-size: 11px;
+}
+
+
+/*
+
+.NuevaDisciplina
+{
+	background-image: url(imagenes/NuevaDisciplina.gif);
+}	
+
+.Tenis
+{	
+	background-image: url(imagenes/Tenis.gif);
+}
+
+.TenisDeMesa
+{	
+	background-image: url(imagenes/TenisDeMesa.gif);
+}
+
+.Baloncesto
+{	
+	background-image: url(imagenes/Baloncesto.gif);
+}
+
+.Fútbol
+{	
+	background-image: url(imagenes/Fútbol.gif);
+}
+
+.FútbolSala
+{
+	background-image: url('imagenes/Fútbol Sala.gif');
+}
+
+.Ajedrez
+{
+	background-image: url('imagenes/Ajedrez.gif');
+}
+
+.Balonmano
+{
+	background-image: url('imagenes/Balonmano.gif');
+}
+
+.Padel
+{
+	background-image: url('imagenes/Padel.gif');
+}
+
+.Voleibol
+{
+	background-image: url('imagenes/Voleibol.gif');
+}
+
+.Floorball
+{
+	background-image: url('imagenes/Floorball.gif');
+}
+
+.Dardos
+{
+	background-image: url('imagenes/Dardos.gif');
+}
+*/
+
+/**********************************/
+
+.CheckDestinatarios
+{
+	background-color: White;
+	border: solid 1px;
+}
+
+.CheckDestinatarios td
+{
+	/* Este 25% es porque el RepeatColumns es 4 */
+	width: 25%;
+}
+
+
+/***************** LA TABLA QUE HAY EN LA PÁGINA PANEL DE CONTROL ********/
+.tablaPanelControl
+{
+	border-collapse:collapse; 
+	border: none;
+}
+
+.tablaPanelControl td
+{
+	vertical-align: middle;
+	margin: 0 0 0 0;
+}
+
+.tablaPanelControl .Icono
+{
+	width: 40px;
+	text-align: center;
+	margin-right: 0px;
+}
+
+.tablaPanelControl .Icono a
+{
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}	
+
+.tablaPanelControl .Accion a
+{
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+}
+
+.tablaPanelControl .Accion
+{
+	font-size: 125%;
+	width: 200px;
+}
+
+.tablaPanelControl .Comentario
+{
+	font-size: 90%;
+}
+ 
+
+.tablaPanelControl tr
+{
+	border-top: solid 2px #E1D4C0;
+}
+
+/*********** Tabla de participantes para el informe ************/
+.tabCompetidores
+{
+	border-collapse: collapse;
+}
+
+.tabCompetidores td
+{
+	padding: 5px 5px 5px 5px;
+}
+
+.tabCompetidores .NombreCompetidor
+{
+	width: 350px;
+}
+
+.tabCompetidores .EMail
+{
+	width: 250px;
+}
+
+.tabCompetidores .Telefono
+{
+	width: 250px;
+}
+
+/***************** INFORME **************/
+.InformeTitulo
+{
+	font-size: x-large;
+	color: #104386;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+}
+
+.InformeSubtitulo
+{
+	font-size: large;
+	color: #104386;
+}
+
+/**************** LEYENDA DE LA CLASIFICACIÓN ***********/
+
+.LeyendaContenedor .Cabecera
+{
+	width: 20px;
+}
+
+.LeyendaContenedor
+{
+	vertical-align:top; 
+	float: right;	
+	font-size: smaller;
+}
+
+
+.divMasLigas
+{
+	display: inherit;
+	font-size: small;
+	vertical-align: bottom;
+	padding-left: 21px;
+	padding-right: 5px;
+	float: right;
+	font-weight: normal;
+	background-image: url('imagenes/Buscar.gif');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left center;	
+}
+
+.CuadranteResultados td
+{
+	text-align: center;
+	font-size: 85%;
+}
+
+.CuadranteResultados .NombreVisitante
+{
+	vertical-align: bottom;
+	text-align: center;
+	min-width: 30px;
+	width: 40px;
+}
+
+.CuadranteResultados .NombreLocal
+{
+	width: 100px;
+	text-align: right;
+	height: 22px;
+	white-space: nowrap;
+}
+
+.CuadranteResultados .Esquina td
+{
+	font-weight: normal;
+	vertical-align: bottom;
+	text-align: right;
+}
+
+.CuadranteResultados .Esquina
+{
+	width: 100%;
+	height: 100%;
+}
+
+.CuadranteResultados .CeldaEsquina
+{
+	vertical-align: bottom;
+}
+
+.CuadranteResultados .Diagonal
+,.CuadranteResultados .PartidoInexistente
+
+{
+	background-color: #E0E0E0;
+}
+
+.CuadranteResultados .GridFilaPar
+{
+	background-color: #F2FFFF;
+}
+
+.CuadranteResultados .PartidoDisputado
+{
+	color: Blue;
+	padding: 2px 5px 2px 5px;
+}
+
+.CuadranteResultados .PartidoPendiente
+{
+	color: #404040;
+	width: 100%;
+	height: 100%;
+	background-color: #F0A7A8;
+	font-size: 185%;
+}
+
+.divBotonConfigurarClasificacion a
+{
+	font-size: 80%;
+}
+
+.divBotonConfigurarClasificacion
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+
+
+.divTituloAbreviada a
+{
+	color: White;
+}
+
+.divTituloAbreviada a:hover
+{
+	background-color: inherit;
+}
+
+.divTituloAbreviada
+{
+	background-color: #104386;
+	color: White;
+	width: 100%;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 5px 5px 5px 5px;
+}
+
+.divNombreLigaAbreviada
+{
+	background-color: #3063A6;
+	font-size: 120%;
+	color: #FFFFFF;
+	width: 100%;
+	padding: 5px 0 5px 5px;
+}
+
+.TabResNP
+{
+	width: 100%;
+}
+
+.TabResNP td
+{
+	width: 50%;
+	font-size: 9px; 
+}
+
+.TabResNP .Local
+{
+	text-align: left;
+}
+
+.Enlazar
+{
+	font-size: x-small;
+}
+
+.Enlazar input
+{
+	font-size: x-small;
+	width:200px;
+}
+
+.Enlazar div
+{
+	margin-top: 15px;
+}
+
+.PiePagina .HayPistaLibre
+{
+	text-align: center;
+	background-color: #104386;
+	width: 500px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.PiePagina .HayPistaLibre a
+{
+	color: #FFFFFF;
+}	
+
+.PiePagina .HayPistaLibre a:hover
+{
+	background-color: inherit;
+	text-decoration: underline;
+}	
+
+.PiePagina
+{
+    border-top: solid 1px #DDDDDD;
+}
+
+.PiePagina>div
+{
+	margin: 0 auto;
+	text-align: center;
+}        
+
+
+.Colores
+{
+	margin-top: 10px;
+	font-size: 12px;
+	width: 600px;
+}
+
+
+.Empezar
+{
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+.Empezar .Titulo
+{
+	background-color:#E1D4C0;
+	background-repeat:repeat-x;
+	color:Black;
+	font-weight:bold;
+	padding: 5px;
+	font-size: 14px;
+}
+
+
+.Empezar .CrearLiga
+{
+	background-image: url('imagenes/Nuevo.gif');
+}
+
+.Empezar .BuscarLiga
+{
+	background-image: url('imagenes/Buscar.gif');
+}
+
+.Empezar .MisLigas
+{
+	background-image: url('imagenes/MisLigas.gif');
+}
+
+.Empezar .CrearLiga,.Empezar .BuscarLiga, .Empezar .MisLigas
+{
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 15px;
+	margin-left: 15px;
+}
+
+
+.Novedades
+{
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+
+.Novedades .Titulo
+{
+	background-color:#E1D4C0;
+	background-repeat:repeat-x;
+	color:Black;
+	font-weight:bold;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.Novedades .Novedad
+{
+	background-image:url(imagenes/TrianguloA.gif);
+	background-position:5px 3px;
+	background-repeat:no-repeat;
+	padding-left: 20px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.Novedades .Novedad .Resalte
+{
+	font-weight: bold;
+}
+
+
+.ColorPicker #Input
+{
+	visibility: collapse;
+	width: 0px;
+}
+
+
+/*********** IE6 *************/
+.IE6
+{
+	text-align: center;
+	border: 1px solid #F7941D; 
+	background: #FEEFDA;
+	padding: 10px 10px 10px 10px;
+	font-size: 13px;
+}
+
+.IE6 table
+{
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.IE6 table td
+{
+	width: 96px;
+}
+
+.IE6 img
+{
+	width: 48px;
+	height: 48px;
+	background-color: #CCDDFF;
+}
+
+.IE6 .Razones
+{
+	text-align: left;
+	width: 600px;
+	margin: 0 auto;
+	border: solid 1px #000000;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.IE6 li
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+
+
+.Cronica
+{
+	background-color: white;
+	width: 500px;
+	border: solid 2px #8BAFDD;
+}
+
+.Cronica .Cabecera
+{
+	padding: 3px;
+	font-weight: bold;
+}
+
+.Cronica .CronicaSeccion
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: solid 1px #888888;
+}
+
+.Cronica .CronicaSeccion .NombreCompetidor {
+    white-space: nowrap;
+}
+
+.Cronica .CronicaTexto
+{
+	overflow: auto;
+	padding: 3px 3px 3px 3px;
+}
+
+.Cronica input
+{
+	font-size: 10px;
+}
+
+.Cronica #divBoton
+{
+	background-image: url("imagenes/cerrar.png");
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.Cronica .Cabecera .IconoIncidencia
+{
+	padding-right: 5px;
+}
+
+
+/* Formulario de resultados */
+.ResultadoCronica
+{
+	padding-left: 20px;
+	padding-bottom: 10px;
+	font-size: 11px;
+	border-top: solid 2px #888888;
+}
+
+.ResultadoCronica .TextoCronica
+{
+	width: 400px;
+	height: 100px;
+	font-size: 11px;
+}
+
+.Anotadores
+{
+}
+
+.Anotadores>table
+{
+	width: 100%;
+}
+
+.Anotadores input, .Anotadores select
+{
+	width: 100%;
+	font-size: 11px;
+}
+
+.Anotadores .ListaAnotadores
+{
+	height: 80px;
+}
+
+.PaginaEstadisticas
+{
+}
+
+.PaginaEstadisticas .GridAnotadores td
+,.PaginaEstadisticas .GridAnotadores th
+{
+	padding:  5px 15px 5px 15px;
+}
+
+.TablaCompetidores td
+{
+	padding: 5px 5px 5px 5px;
+}
+
+.ResultadoHabilitar
+{
+	font-size: 10px;
+}
+
+.ResultadoHabilitar input
+{
+	padding-left: 20px;
+}
+
+
+/* Accordion */
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 200px; 
+}
+
+.accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+.accordionHeaderSelected .IconoIncidencia,.accordionHeader .IconoIncidencia
+{
+	padding-right: 5px;
+}
+
+.accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+.accordionHeaderSelected a:hover
+{
+	background: none;
+	text-decoration: none;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.divConfigurarDetalles .divCabecera
+{
+	width: 250px;
+}
+
+.divConfigurarDetalles .GridDetalles td
+{
+	padding: 5px;
+	width: 200px;
+}
+
+.GridAnotadores .IconoIncidencia
+{
+	margin-right: 5px;
+}	
+.IconoIncidencia
+{
+	width: 16px;
+	height: 16px;
+}
+
+.texto_rotado {
+     -moz-transform: rotate(-90deg);  /* FF3.5+ */
+       -o-transform: rotate(-90deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(-90deg);  /* Saf3.1+, Chrome */
+             filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+         -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+
+}
+
+.divContenedorTablaClasificacion
+{
+}
+
+h1
+{
+    color: #3265A8;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tablaContenido
+{
+    width: 100%;
+}
+
+
+.tdTablaContenido
+{
+    padding-right: 10px; 
+    padding-left: 5px; 
+    padding-top: 5px; 
+    vertical-align: top
+}
+
+#btnMostrarEnlazar
+{
+    background-image: url("imagenes/link.png");
+}
+
+#btnMostrarLeyenda
+{
+    background-image: url("imagenes/leyenda.gif");
+}
+
+#btnMostrarLeyenda, #btnMostrarEnlazar
+{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.CuerpoEstrecho
+{
+    width: 800px;
+}
+
+.PanelEditarCompetidores
+{
+    min-width: 1200px;  /* Para que quepa el selector de fichero */
+}
+
+.PanelEditarCompetidores .FilaCompetidor
+{
+    height: 45px;
+    padding-top: 5px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.PanelEditarCompetidores .FilaCompetidor>div
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.tablaPanelControl .Icono img
+{
+    width: 32px;
+    height: 32px;
+}
+
+.divLeyenda
+{
+    padding-top: 10px;
+}
+
+.divLeyenda .divLeyendaItem
+{
+    margin-right: 5px;
+    font-size: 9px;
+}
+
+.divLeyenda .divLeyendaItem .Cabecera
+{
+    font-size: 9px;
+}
+
+.DialogBox {
+    background-color: #ffffff;
+    border: 1px solid;
+    float: left;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: fixed;
+    top: 10px;
+    width: 350px;
+    z-index: 99999;
+    display: none;
+}
+
+.divPanelPaginaError
+{
+    width: 70%; 
+    margin: 0 auto;
+}
+
+.divPanelPaginaError img
+{
+    width: 64px;
+    height: 64px;
+}
+
+.txtEnlazar
+{
+    width: 350px;
+}
+
+.CabeceraCookies {
+    background-color: #E1D4C0;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.CabeceraCookies .boton {
+    font-size: 8px;
+}

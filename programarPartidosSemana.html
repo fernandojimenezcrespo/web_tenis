@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="icon" type="image/png" href="images/jugador.jpg" sizes="any">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+<script type="text/javascript" src="js/partidos.js"></script>
+<title>IV LIGA  AMIGOS DEL TENIS 2021-2022</title>
+</head>
+
+<body>
+<input type="hidden" id="semaforo" value="SI">
+<div class="container">
+  <div id="id_div_tabla"  >
+    <table class="table">
+      <tr>
+        <td colspan="3"><a href="index.html"><img src="https://image.flaticon.com/icons/png/512/32/32170.png" height="38" width="35" title="VOLVER"></a> <img src="images/88t.png" width="59" height="52"  title="el88" class="figure-img text-xs-center"/> <img src="https://www.pngarts.com/files/3/Tennis-Player-PNG-Image-Background.png" title="TENIS" width="50" height="50"/></td>
+        <td colspan="3" align="center"><h2> IV LIGA  AMIGOS DEL TENIS 2021-2022</h2></td>
+      </tr>
+    </table>
+    <table width="100%"   class="table">
+      <tbody  >
+        <tr> </tr>
+        <tr class="success" bgcolor="#D5D5D5">
+          <th scope="col" width="10%">FECHA</th>
+          <th scope="col" width="10%">DIA</th>
+          <th scope="col" width="10%">HORA</th>
+          <th scope="col" width="10%">CATEGORIA</th>
+          <th scope="col" width="30%">JUGADOR 1</th>
+          <th scope="col" width="30%">JUGADOR 2</th>
+        </tr>
+        <tr>
+          <td><input type="date" id="fecha_1" name="fecha_1" size="10"></td>
+          <td   ><input type="text" size="8"  id="dia_1" disabled></td>
+          <td  ><select id="hora_1">
+              <option value="">HORA</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00" selected>16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select></td>
+          <td ><select id="categoria_1">
+              <option value="">Elige categoria</option>
+              <option value="oro">ORO</option>
+              <option value="plata">PLATA</option>
+              <option value="bronce">BRONCE</option>
+              <option value="promocion">PROMOCION</option>
+            </select></td>
+          <td id="1_1"  align="left" ><select id="jugador1_1">
+              <option value="">Elige jugador</option>
+            </select></td>
+          <td id="1_2"  align="left" ><select id="jugador1_2">
+              <option value="">Elige jugador</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td><input type="date" id="fecha_2" name="fecha_2" size="10"></td>
+          <td  ><input type="text" size="8"  id="dia_2" name="dia_2" readonly></td>
+          <td ><select name="hora_2" id="hora_2">
+              <option value="">HORA</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00" selected>16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00" >19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select></td>
+          <td ><select id="categoria_2">
+              <option value="">Elige categoria</option>
+              <option value="oro">ORO</option>
+              <option value="plata">PLATA</option>
+              <option value="bronce">BRONCE</option>
+              <option value="promocion">PROMOCION</option>
+            </select></td>
+          <td id="2_1"  align="left" ><select id="jugador2_1">
+              <option value="">Elige jugador</option>
+            </select></td>
+          <td id="2_2"  align="left" ><select id="jugador2_2">
+              <option value="">Elige jugador</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td><input type="date" id="fecha_3" name="fecha_3" size="10"></td>
+          <td  ><input type="text" size="8"  id="dia_3" readonly></td>
+          <td ><select name="hora_3" id="hora_3">
+              <option value="">HORA</option>
+              <option value="10:00" >10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00" selected>18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select></td>
+          <td ><select id="categoria_3">
+              <option value="">Elige categoria</option>
+              <option value="oro">ORO</option>
+              <option value="plata">PLATA</option>
+              <option value="bronce">BRONCE</option>
+              <option value="promocion">PROMOCION</option>
+            </select></td>
+          <td id="3_1"  align="left" ><select id="jugador3_1">
+              <option value="">Elige jugador</option>
+            </select></td>
+          <td id="3_2"  align="left" ><select id="jugador3_2">
+              <option value="">Elige jugador</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td><input type="date" id="fecha_4" name="fecha_4" size="10"></td>
+          <td  ><input type="text" size="8"  id="dia_4" readonly></td>
+          <td ><select  id="hora_4">
+              <option value="">HORA</option>
+              <option value="10:00" selected>10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00" >12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select></td>
+          <td ><select id="categoria_4">
+              <option value="">Elige categoria</option>
+              <option value="oro">ORO</option>
+              <option value="plata">PLATA</option>
+              <option value="bronce">BRONCE</option>
+              <option value="promocion">PROMOCION</option>
+            </select></td>
+          <td id="4_1"  align="left" ><select id="jugador4_1">
+              <option value="">Elige jugador</option>
+            </select></td>
+          <td id="4_2"  align="left" ><select id="jugador4_2">
+              <option value="">Elige jugador</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td><input type="date" id="fecha_5" name="fecha_5" size="10"></td>
+          <td  ><input type="text" size="8"  id="dia_5" readonly></td>
+          <td ><select  id="hora_5">
+              <option value="">HORA</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00" selected>12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00" >17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select></td>
+          <td ><select id="categoria_5">
+              <option value="">Elige categoria</option>
+              <option value="oro">ORO</option>
+              <option value="plata">PLATA</option>
+              <option value="bronce">BRONCE</option>
+              <option value="promocion">PROMOCION</option>
+            </select></td>
+          <td id="5_1"  align="left" ><select id="jugador5_1">
+              <option value="">Elige jugador</option>
+            </select></td>
+          <td id="5_2"  align="left" ><select id="jugador5_2">
+              <option value="">Elige jugador</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Nota:</td>
+          <td colspan="3" bgcolor="#AEAEAE"><textarea name="textarea" cols="80" rows="5" wrap="virtual" ></textarea></td>
+          <td><input type="button" value="Generar Informe" id="id_btGenerarInforme"></td>
+        </tr>
+    </table>
+  </div>
+  <div id="id_div_informe">
+    <input type="button" value="Visualizar Tabla" id="id_btGenerartabla">
+    <p id="id_informe"> 
+      
+      <!--	<table id="id_tabla_informe" class='table-bordered table-striped' summary='resumen de tabla'>
+    <tr> 
+	<th>DIA</th>
+	<th>HORA</th>
+    <th>CATEGORIA</th>
+	<th>JUGADOR 1</th>
+	<th>SOCIO</th>
+	<th>JUGADOR 2</th>
+	<th >SOCIO</th>
+    </tr>
+    </table>--> 
+    </p>
+  </div>
+</div>
+</body>
+</html>
