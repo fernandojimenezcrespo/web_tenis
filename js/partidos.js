@@ -38,7 +38,7 @@ var obj = JSON.parse(texto);*/
     + '{"categoria": " BRONCE ","numero": " 8 ","nombre": " CESAR MANUEL "},'
     + '{"categoria": " BRONCE ","numero": " 9 ","nombre": " ALBERTO HDEZ. "},'
   	+ '{"categoria": " BRONCE ","numero": " 10 ","nombre": " SABAS "},'
-    + '{"categoria": " BRONCE ","numero": " 11 ","nombre": " JUAN A. HDEZ."}]}';
+    + '{"categoria": " BRONCE ","numero": " 11 ","nombre": " JUG.DESCANSA"}]}';
   var jugadorJSON = JSON.parse(txtJugadores);
   var arrJugadores = jugadorJSON.jugadores;
   return arrJugadores;
