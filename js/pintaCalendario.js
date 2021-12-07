@@ -91,7 +91,7 @@ function dameJornadas() {
       "fecha": "04/12/2021"
     },
     "CAMPO10": {
-      "categoria": "PLATA",
+      "categoria": "PLATA", 
       "fecha": "05/12/2021"
     },
     "CAMPO11": {
@@ -112,211 +112,211 @@ function dameJornadas() {
     },
     "CAMPO15": {
       "categoria": "PLATA",
-      "fecha": "15/01/2022"
+      "fecha": "08/01/2022"
     },
     "CAMPO16": {
       "categoria": "PLATA",
-      "fecha": "16/01/2022"
+      "fecha": "09/01/2022"
     },
     "CAMPO17": {
       "categoria": "BRONCE",
-      "fecha": "22/01/2022"
+      "fecha": "15/01/2022"
     },
     "CAMPO18": {
       "categoria": "BRONCE",
-      "fecha": "23/01/2022"
+      "fecha": "16/01/2022"
     },
     "CAMPO19": {
       "categoria": "ORO",
-      "fecha": "29/01/2022"
+      "fecha": "22/01/2022"
     },
     "CAMPO20": {
       "categoria": "ORO",
-      "fecha": "30/01/2022"
+      "fecha": "23/01/2022"
     },
     "CAMPO21": {
       "categoria": "PLATA",
-      "fecha": "05/02/2022"
+      "fecha": "29/01/2022"
     },
     "CAMPO22": {
       "categoria": "PLATA",
-      "fecha": "06/02/2022"
+      "fecha": "30/01/2022"
     },
     "CAMPO23": {
       "categoria": "BRONCE",
-      "fecha": "12/02/2022"
+      "fecha": "05/02/2022"
     },
     "CAMPO24": {
       "categoria": "BRONCE",
-      "fecha": "13/02/2022"
+      "fecha": "06/02/2022"
     },
     "CAMPO25": {
       "categoria": "ORO",
-      "fecha": "19/02/2022"
+      "fecha": "12/02/2022"
     },
     "CAMPO26": {
       "categoria": "ORO",
-      "fecha": "20/02/2022"
+      "fecha": "13/02/2022"
     },
     "CAMPO27": {
       "categoria": "PLATA",
-      "fecha": "26/02/2022"
+      "fecha": "19/02/2022"
     },
     "CAMPO28": {
       "categoria": "PLATA",
-      "fecha": "27/02/2022"
+      "fecha": "20/02/2022"
     },
     "CAMPO29": {
       "categoria": "BRONCE",
-      "fecha": "05/03/2022"
+      "fecha": "26/02/2022"
     },
     "CAMPO30": {
       "categoria": "BRONCE",
-      "fecha": "06/03/2022"
+      "fecha": "27/02/2022"
     },
     "CAMPO31": {
       "categoria": "ORO",
-      "fecha": "12/03/2022"
+      "fecha": "05/03/2022"
     },
     "CAMPO32": {
       "categoria": "ORO",
-      "fecha": "13/03/2022"
+      "fecha": "06/03/2022"
     },
     "CAMPO33": {
       "categoria": "PLATA",
-      "fecha": "19/03/2022"
+      "fecha": "12/03/2022"
     },
     "CAMPO34": {
       "categoria": "PLATA",
-      "fecha": "20/03/2022"
+      "fecha": "13/03/2022"
     },
     "CAMPO35": {
       "categoria": "BRONCE",
-      "fecha": "26/03/2022"
+      "fecha": "19/03/2022"
     },
     "CAMPO36": {
       "categoria": "BRONCE",
-      "fecha": "27/03/2022"
+      "fecha": "20/03/2022"
     },
     "CAMPO37": {
       "categoria": "ORO",
-      "fecha": "02/04/2022"
+      "fecha": "26/03/2022"
     },
     "CAMPO38": {
       "categoria": "ORO",
-      "fecha": "03/04/2022"
+      "fecha": "27/03/2022"
     },
     "CAMPO39": {
       "categoria": "PLATA",
-      "fecha": "23/04/2022"
+      "fecha": "02/04/2022"
     },
     "CAMPO40": {
       "categoria": "PLATA",
-      "fecha": "24/04/2022"
+      "fecha": "03/04/2022"
     },
     "CAMPO41": {
       "categoria": "BRONCE",
-      "fecha": "30/04/2022"
+      "fecha": "09/04/2022"
     },
     "CAMPO42": {
       "categoria": "BRONCE",
-      "fecha": "01/05/2022"
+      "fecha": "10/04/2022"
     },
     "CAMPO43": {
       "categoria": "ORO",
-      "fecha": "07/05/2022"
+      "fecha": "16/04/2022"
     },
     "CAMPO44": {
       "categoria": "ORO",
-      "fecha": "08/05/2022"
+      "fecha": "17/04/2022"
     },
     "CAMPO45": {
       "categoria": "PLATA",
-      "fecha": "14/05/2022"
+      "fecha": "23/04/2022"
     },
     "CAMPO46": {
       "categoria": "PLATA",
-      "fecha": "15/05/2022"
+      "fecha": "24/04/2022"
     },
     "CAMPO47": {
       "categoria": "BRONCE",
-      "fecha": "21/05/2022"
+      "fecha": "30/04/2022"
     },
     "CAMPO48": {
       "categoria": "BRONCE",
-      "fecha": "22/05/2022"
+      "fecha": "01/05/2022"
     },
     "CAMPO49": {
       "categoria": "ORO",
-      "fecha": "28/05/2022"
+      "fecha": "07/05/2022"
     },
     "CAMPO50": {
       "categoria": "ORO",
-      "fecha": "29/05/2022"
+      "fecha": "08/05/2022"
     },
     "CAMPO51": {
       "categoria": "PLATA",
-      "fecha": "04/06/2022"
+      "fecha": "14/05/2022"
     },
     "CAMPO52": {
       "categoria": "PLATA",
-      "fecha": "05/06/2022"
+      "fecha": "15/05/2022"
     },
     "CAMPO53": {
       "categoria": "BRONCE",
-      "fecha": "11/06/2022"
+      "fecha": "21/05/2022"
     },
     "CAMPO54": {
       "categoria": "BRONCE",
-      "fecha": "12/06/2022"
+      "fecha": "22/05/2022"
     },
     "CAMPO55": {
       "categoria": "ORO",
-      "fecha": "18/06/2022"
+      "fecha": "28/05/2022"
     },
     "CAMPO56": {
       "categoria": "ORO",
-      "fecha": "19/06/2022"
+      "fecha": "29/05/2022"
     },
     "CAMPO57": {
       "categoria": "PLATA",
-      "fecha": "25/06/2022"
+      "fecha": "04/06/2022"
     },
     "CAMPO58": {
       "categoria": "PLATA",
-      "fecha": "26/06/2022"
+      "fecha": "05/06/2022"
     },
     "CAMPO59": {
       "categoria": "BRONCE",
-      "fecha": "02/07/2022"
+      "fecha": "11/06/2022"
     },
     "CAMPO60": {
       "categoria": "BRONCE",
-      "fecha": "03/07/2022"
+      "fecha": "12/06/2022"
     },
     "CAMPO61": {
       "categoria": "ORO",
-      "fecha": "09/07/2022"
+      "fecha": "18/06/2022"
     },
     "CAMPO62": {
       "categoria": "ORO",
-      "fecha": "10/07/2022"
+      "fecha": "19/06/2022"
     },
     "CAMPO63": {
       "categoria": "PLATA",
-      "fecha": "16/07/2022"
+      "fecha": "25/06/2022"
     },
     "CAMPO64": {
       "categoria": "PLATA",
-      "fecha": "17/07/2022"
+      "fecha": "26/06/2022"
     },
     "CAMPO65": {
       "categoria": "BRONCE",
-      "fecha": "23/07/2022"
+      "fecha": "02/07/2022"
     },
     "CAMPO66": {
       "categoria": "BRONCE",
-      "fecha": "24/07/2022"
+      "fecha": "03/07/2022"
     }
   }
   return arrayDiasCalendario;
@@ -735,15 +735,15 @@ function construirCalendario(arrayFiestas, anyo) {
 				  if (categoria=="PLATA") colorFestivo="bgcolor='C0C0C0'";
 				  if (categoria=="BRONCE") colorFestivo="bgcolor='CD7F32'";*/
 				  if (categoria=="ORO") 
-					  pelota="<img src='images/pelotaOro.png' width='22' height='15' title='ORO'/> ";
+					  pelota="<img src='images/pelotaOro.png' width='20' height='15' title='ORO'/> ";
 				  else
 				  if (categoria=="PLATA") 
-					  pelota="<img src='images/pelotaPlata.png' width='22' height='15' title='PLATA'/> ";
+					  pelota="<img src='images/pelotaPlata.png' width='20' height='15' title='PLATA'/> ";
 				  else
 				  if (categoria=="BRONCE") 
-					  pelota="<img src='images/pelotaBronce.png' width='22' height='15' title='BRONCE'/>";
+					  pelota="<img src='images/pelotaBronce.png' width='20' height='15' title='BRONCE'/>";
 				  else
-                		pelota="<img src='images/pelotaBlanco.png' width='22' height='15' title='Sin partido programado'/>"
+                		pelota="<img src='images/pelotaBlanco.png' width='20' height='15' title='Sin partido programado'/>"
 				  if (dia <= diasMeses[numeroMes]) {
                   var idCelda = idRadio.replace("/", "");
                   idCelda = idCelda.replace("/", "");
