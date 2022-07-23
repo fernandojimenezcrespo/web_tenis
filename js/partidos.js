@@ -20,7 +20,7 @@ var obj = JSON.parse(texto);*/
     + '{"categoria": " PLATA ","numero": " 1 ","nombre": " ALVARO  "},'
     + '{"categoria": " PLATA ","numero": " 2 ","nombre": " VICTOR  "},'
     + '{"categoria": " PLATA ","numero": " 3 ","nombre": " LUIS FERNANDO "},'
-    + '{"categoria": " PLATA ","numero": " 4 ","nombre": " NACHO ALVAREZ "},'
+    + '{"categoria": " PLATA ","numero": " 4 ","nombre": "(retirado) NACHO ALVAREZ "},'
     + '{"categoria": " PLATA ","numero": " 5 ","nombre": " LUIS CHIA  "},'
     + '{"categoria": " PLATA ","numero": " 6 ","nombre": " SEBASTIAN (CHAN)"},'
     + '{"categoria": " PLATA ","numero": " 7 ","nombre": " NACHO SANCHEZ "},'

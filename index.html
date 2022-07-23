@@ -5,12 +5,16 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link href="default.css" rel="stylesheet" type="text/css" media="screen" />
 <link rel="icon" type="image/png" href="images/jugador.jpg" sizes="any">
+	<script language="javascript" type="text/javascript">
+		localStorage.visitas=(localStorage.visitas || 0);
+		let numero_visitas=++localStorage.visitas;
+	</script>
 </head>
 <body>
 <!-- start header -->
 <div id="header">
   <div id="logo">
-    <h1>Liga de los amigos del Tenis el 88t</h1>
+    <h1>Liga de los amigos del Tenis el 88t </h1>
     <p>&nbsp;</p>
   </div>
   <!--<div id="search">
@@ -58,10 +62,12 @@
     <ul>
       <li>
         <h2>Enlaces</h2>
-        <ul>
+       <ul>
           <li><a href="programarPartidosSemana.html" target='_blank'>Programar Semana</a></li>
-          <li><a href="https://www.gesliga.com/Inicio.aspx" target='_blank'>Clasificacion Oficial</a></li>
-          <li><a href="clasificaciones.html">Como van las ligas</a></li>
+          <li><a href="https://www.gesliga.com//Clasificacion.aspx?Liga=411474"  target='_blank'>Clasificacion Oficial ORO</a></li>
+          <li><a href="https://www.gesliga.com//Clasificacion.aspx?Liga=411475"  target='_blank'>Clasificacion Oficial PLATA</a></li>
+          <li><a href="https://www.gesliga.com//Clasificacion.aspx?Liga=411476"  target='_blank'>Clasificacion Oficial BRONCE</a></li>
+          
           <li><a href="cuandoNoJugamosAlTenis.html">Cuando no Jugamos</a></li>
         </ul>
       </li>
@@ -69,7 +75,7 @@
         <h2>News</h2>
         <ul>
           <li><a href="#">Inicio Web </a></li>
-          <li><a href="contacto.html"><marquee behavior="slide">cerrada la inscripción 2021/22</marquee></a></li>
+          <li><a href="contacto.html"><marquee behavior="slide">ABIERTA la inscripción 2022/23</marquee></a></li>
         </ul>
       </li>
     </ul>
@@ -81,5 +87,8 @@
 <div id="footer">
   <p>&copy;2020 All Rights Reserved. &nbsp;&bull;&nbsp; Design by <a target="_blank" href="http://www.freecsstemplates.org/">Free CSS Templates</a> &nbsp;&bull;&nbsp; Icons by <a target="_blank" href="http://www.famfamfam.com/">FAMFAMFAM</a>.</p>
 </div>
+	<script language="javascript" type="text/javascript">
+	document.addEventListener('DOMContentLoaded',()=>document.getElementById('num_visitas').innerHTML = numero_visitas);
+	</script>
 </body>
 </html>
