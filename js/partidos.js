@@ -6,39 +6,42 @@ function dameJugadores() {
 var obj = JSON.parse(texto);*/
 
   var txtJugadores = '{ "jugadores":['
-    + '{"categoria": " ORO ","numero": " 1 ","nombre": " DIEGO  "},'
-    + '{"categoria": " ORO ","numero": " 2 ","nombre": " DAVID MERINO"},'
-    + '{"categoria": " ORO ","numero": " 3 ","nombre": " RUBEN  "},'
-    + '{"categoria": " ORO ","numero": " 4 ","nombre": " CESAR "},'
-    + '{"categoria": " ORO ","numero": " 5 ","nombre": " NACHO MURIEL  "},'
-    + '{"categoria": " ORO ","numero": " 6 ","nombre": " DAVID CORDOVA "},'
-    + '{"categoria": " ORO ","numero": " 7 ","nombre": " FERNANDO JMNZ  "},'
-    + '{"categoria": " ORO ","numero": " 8 ","nombre": " EDGAR  "},'
-    + '{"categoria": " ORO ","numero": " 9 ","nombre": " FERNANDO GLEZ "},'
-    + '{"categoria": " ORO ","numero": " 10 ","nombre": " LUIS CHIA "},'
-    + '{"categoria": " ORO ","numero": " 11 ","nombre": " CHAN "},'
-    + '{"categoria": " PLATA ","numero": " 1 ","nombre": " RAMIRO  "},'
-    + '{"categoria": " PLATA ","numero": " 2 ","nombre": " JORGE VARGAS  "},'
-    + '{"categoria": " PLATA ","numero": " 3 ","nombre": " ALVARO DE ARRIBA "},'
-    + '{"categoria": " PLATA ","numero": " 4 ","nombre": " VICENTE "},'
-    + '{"categoria": " PLATA ","numero": " 5 ","nombre": " (retirado N.Sánchez)  "},'
-    + '{"categoria": " PLATA ","numero": " 6 ","nombre": " VICTOR MORALEDA"},'
-    + '{"categoria": " PLATA ","numero": " 7 ","nombre": " LUIS FER"},'
-    + '{"categoria": " PLATA ","numero": " 8 ","nombre": " ALBERTO"},'
-    + '{"categoria": " PLATA ","numero": " 9 ","nombre":  " A. SANCHEZ GUINEA"},'
-    + '{"categoria": " PLATA ","numero": " 10 ","nombre": " JOSE LUIS BLZ."},'
-    + '{"categoria": " PLATA ","numero": " 11 ","nombre": " (retirado) V.BERNALDO  "},'
-    + '{"categoria": " BRONCE ","numero": " 1 ","nombre": " EDUARDO LOPEZ "},'
-    + '{"categoria": " BRONCE ","numero": " 2 ","nombre": " DAVID MARTIN "},'
-    + '{"categoria": " BRONCE ","numero": " 3 ","nombre": " CESAR MANUEL   "},'
-    + '{"categoria": " BRONCE ","numero": " 4 ","nombre": " LUIS BLANCO"},'
-    + '{"categoria": " BRONCE ","numero": " 5 ","nombre": " JOSE SANTODOMINGO "},'
-    + '{"categoria": " BRONCE ","numero": " 6 ","nombre": " PACO GALAN  "},'
-    + '{"categoria": " BRONCE ","numero": " 7 ","nombre": " LUIS MORENO  "},'
-    + '{"categoria": " BRONCE ","numero": " 8 ","nombre": " LUIS M. SANCHEZ "},'
-    + '{"categoria": " BRONCE ","numero": " 9 ","nombre": " MARIUS "},'
-  	+ '{"categoria": " BRONCE ","numero": " 10 ","nombre": " RUBEN SERRANO    "},'
-    + '{"categoria": " BRONCE ","numero": " 11 ","nombre": " "}]}';
+    + '{"categoria": " ORO ","numero": " 1 ","nombre": " 1 RUBEN  "},'
+    + '{"categoria": " ORO ","numero": " 2 ","nombre": " 2 DIEGO"},'
+    + '{"categoria": " ORO ","numero": " 3 ","nombre": " 3 LUIS CHIA  "},'
+    + '{"categoria": " ORO ","numero": " 4 ","nombre": " 4 NACHO MURIEL"},'
+    + '{"categoria": " ORO ","numero": " 5 ","nombre": " 5 FERNANDO JMNZ"},'
+    + '{"categoria": " ORO ","numero": " 6 ","nombre": " 6 CESAR S. "},'
+    + '{"categoria": " ORO ","numero": " 7 ","nombre": " 7 DAVID CORDOVA"},'
+    + '{"categoria": " ORO ","numero": " 8 ","nombre": " 8 SEBASTIAN  "},'
+    + '{"categoria": " ORO ","numero": " 9 ","nombre": "  9 ALVARO "},'
+    + '{"categoria": " ORO ","numero": " 10 ","nombre": " 10 JOSE LUIS "},'
+    + '{"categoria": " ORO ","numero": " 11 ","nombre": " 11 FERNANDO GLEZ. "},'
+    + '{"categoria": " PLATA ","numero": " 1 ","nombre": " 1 ANTONIO S. GUINEA  "},'
+    + '{"categoria": " PLATA ","numero": " 2 ","nombre": "  2 VICENTE DE LA FUENTE  "},'
+    + '{"categoria": " PLATA ","numero": " 3 ","nombre": "   3 VICTOR MORALEDA "},'
+    + '{"categoria": " PLATA ","numero": " 4 ","nombre": " 4 JORGE VARGAS "},'
+    + '{"categoria": " PLATA ","numero": " 5 ","nombre": " 5 RUBEN SERRANO  "},'
+    + '{"categoria": " PLATA ","numero": " 6 ","nombre": "  6 LUIS MORENO"},'
+    + '{"categoria": " PLATA ","numero": " 7 ","nombre": "  7 RAMIRO"},'
+    + '{"categoria": " PLATA ","numero": " 8 ","nombre": " 8 DAVID MARTIN"},'
+    + '{"categoria": " PLATA ","numero": " 9 ","nombre":  " 9 LUIS MIGUEL"},'
+    + '{"categoria": " PLATA ","numero": " 10 ","nombre": " 10 EDUARDO LOPEZ"},'
+    + '{"categoria": " PLATA ","numero": " 11 ","nombre": " 11 CESAR MANUEL  "},'
+    + '{"categoria": " BRONCE ","numero": " 1 ","nombre": "  1 LUIS BLANCO "},'
+    + '{"categoria": " BRONCE ","numero": " 2 ","nombre": "  2 MARIUS "},'
+    + '{"categoria": " BRONCE ","numero": " 3 ","nombre": "  3 PACO GALAN   "},'
+    + '{"categoria": " BRONCE ","numero": " 4 ","nombre": "  4 ANTONIO (Yedra)"},'
+    + '{"categoria": " BRONCE ","numero": " 5 ","nombre": "  5 M.ANGEL ABAD "},'
+    + '{"categoria": " BRONCE ","numero": " 6 ","nombre": "  6 VICTOR BLQZ  "},'
+    + '{"categoria": " BRONCE ","numero": " 7 ","nombre": " 7 MARIANO HERRANZ   "},'
+    + '{"categoria": " BRONCE ","numero": " 8 ","nombre": "  8 ALEXIS "},'
+    + '{"categoria": " BRONCE ","numero": " 9 ","nombre": " 9 PABLO PIERNA "},'
+    + '{"categoria": " BRONCE ","numero": " 10 ","nombre": " 10  JUANJO    "},'
+    + '{"categoria": " BRONCE ","numero": " 11 ","nombre": " 11  LUIS MIGUEL    "},'
+    + '{"categoria": " BRONCE ","numero": " 11 ","nombre": " 12  MARIO    "},'
+    + '{"categoria": " BRONCE ","numero": " 11 ","nombre": " 13  JOAQUIN    "},'
+    + '{"categoria": " BRONCE ","numero": " 14 ","nombre": " 14  FRAN "}]}';
   var jugadorJSON = JSON.parse(txtJugadores);
   var arrJugadores = jugadorJSON.jugadores;
   return arrJugadores;
@@ -127,13 +130,13 @@ function muestraInforme() {
   $("#id_informe").children().remove();
   $("#id_informe").append("<h2>LIGA 2019/2020 88t</H2>");
 
-  $("#id_informe").append("<table id='id_tabla_informe' class='table-bordered table-striped' summary='resumen de tabla'>"
+  $("#id_informe").append("<table id='id_tabla_informe' class='table table-bordered table-striped' summary='resumen de tabla'>"
     + "<tr><th>FECHA</th><th>DIA</th><th>HORA</th> <th>CATEGORIA</th><th>JUGADOR 1</th> <th>JUGADOR 2</th></tr>"
     + "</table>");
 
   //$("#id_tabla_informe").append("<tr><td colspan='7'>Partidos del fin de semana de:"+$("#fecha").val()+"</td></tr>");
 
-  if (($("#jugador1_1").val().substr(3, 2)) != "0-") {
+  if (($("#jugador1_1").val().substr(3, 2)) != "") {
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_1").val()
       + "<td>" + $("#dia_1").val()
       + "</td><td>" + $("#hora_1").val()
@@ -142,7 +145,15 @@ function muestraInforme() {
       + "<td>" + $("#jugador1_2").val().substr(3, 30) + "</td>"
       + "</tr>");
   }
-  if (($("#jugador2_1").val().substr(3, 2)) != "0-") {
+	else {
+    $("#id_tabla_informe").append("<tr><td>" + $("#fecha_1").val()
+      + "<td>" + $("#dia_1").val()
+      + "</td><td>" + $("#hora_1").val()
+      + "</td><td>" + $("#categoria_1").val().toUpperCase()
+      + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+      + "</tr>");
+  }
+  if (($("#jugador2_1").val().substr(3, 2)) != "") {
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_2").val()
       + "<td>" + $("#dia_2").val()
       + "</td><td>" + $("#hora_2").val()
@@ -151,7 +162,15 @@ function muestraInforme() {
       + "<td>" + $("#jugador2_2").val().substr(3, 30) + "</td>"
       + "</tr>");
   }
-  if (($("#jugador3_1").val().substr(3, 2)) != "0-") {
+	else {
+    $("#id_tabla_informe").append("<tr><td>" + $("#fecha_2").val()
+      + "<td>" + $("#dia_2").val()
+      + "</td><td>" + $("#hora_2").val()
+      + "</td><td>" + $("#categoria_2").val().toUpperCase()
+      + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+      + "</tr>");
+  }
+  if (($("#jugador3_1").val().substr(3, 2)) != "") {
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_3").val()
       + "<td>" + $("#dia_3").val()
       + "</td><td>" + $("#hora_3").val()
@@ -160,7 +179,15 @@ function muestraInforme() {
       + "<td>" + $("#jugador3_2").val().substr(3, 30) + "</td>"
       + "</tr>");
   }
-  if (($("#jugador4_1").val().substr(3, 2)) != "0-") {
+	else {
+    $("#id_tabla_informe").append("<tr><td>" + $("#fecha_3").val()
+      + "<td>" + $("#dia_3").val()
+      + "</td><td>" + $("#hora_3").val()
+      + "</td><td>" + $("#categoria_3").val().toUpperCase()
+      + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+      + "</tr>");
+  }
+  if (($("#jugador4_1").val().substr(3, 2)) != "") {
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_4").val()
       + "<td>" + $("#dia_4").val()
       + "</td><td>" + $("#hora_4").val()
@@ -169,7 +196,15 @@ function muestraInforme() {
       + "<td>" + $("#jugador4_2").val().substr(3, 30) + "</td>"
       + "</tr>");
   }
-  if (($("#jugador5_1").val().substr(3, 2)) != "0-") {
+	else {
+    $("#id_tabla_informe").append("<tr><td>" + $("#fecha_4").val()
+      + "<td>" + $("#dia_4").val()
+      + "</td><td>" + $("#hora_4").val()
+      + "</td><td>" + $("#categoria_4").val().toUpperCase()
+      + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+      + "</tr>");
+  }
+  if (($("#jugador5_1").val().substr(3, 2)) != "") {
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_5").val()
       + "<td>" + $("#dia_5").val()
       + "</td><td>" + $("#hora_5").val()
@@ -177,7 +212,50 @@ function muestraInforme() {
       + "</td><td>" + $("#jugador5_1").val().substr(3, 30) + "</td>"
       + "<td>" + $("#jugador5_2").val().substr(3, 30) + "</td>"
       + "</tr>");
+  }
+	else {
+    $("#id_tabla_informe").append("<tr><td>" + $("#fecha_5").val()
+      + "<td>" + $("#dia_5").val()
+      + "</td><td>" + $("#hora_5").val()
+      + "</td><td>" + $("#categoria_5").val().toUpperCase()
+      + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+      + "</tr>");
+  }
 
+
+   if (($("#jugador6_1").val().substr(3, 2)) != "") {
+    $("#id_tabla_informe").append("<tr><td>" + $("#fecha_6").val()
+      + "<td>" + $("#dia_6").val()
+      + "</td><td>" + $("#hora_6").val()
+      + "</td><td>" + $("#categoria_6").val().toUpperCase()
+      + "</td><td>" + $("#jugador6_1").val().substr(3, 30) + "</td>"
+      + "<td>" + $("#jugador6_2").val().substr(3, 30) + "</td>"
+      + "</tr>");
+  } else {
+    $("#id_tabla_informe").append("<tr><td>" + $("#fecha_6").val()
+      + "<td>" + $("#dia_6").val()
+      + "</td><td>" + $("#hora_6").val()
+      + "</td><td>" + $("#categoria_6").val().toUpperCase()
+      + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+      + "</tr>");
+  }
+
+  if (($("#jugador7_1").val().substr(3, 2)) != "") {
+    $("#id_tabla_informe").append("<tr><td>" + $("#fecha_7").val()
+      + "<td>" + $("#dia_7").val()
+      + "</td><td>" + $("#hora_7").val()
+      + "</td><td>" + $("#categoria_7").val().toUpperCase()
+      + "</td><td>" + $("#jugador7_1").val().substr(3, 30) + "</td>"
+      + "<td>" + $("#jugador7_2").val().substr(3, 30) + "</td>"
+      + "</tr>");
+  }
+	else {
+    $("#id_tabla_informe").append("<tr><td>" + $("#fecha_7").val()
+      + "<td>" + $("#dia_7").val()
+      + "</td><td>" + $("#hora_7").val()
+      + "</td><td>" + $("#categoria_7").val().toUpperCase()
+      + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+      + "</tr>");
   }
 }
 
@@ -255,10 +333,10 @@ function cargaJugadores(idCampo, division) {
     categoria = arrayJugadores[i].categoria;
     numero = arrayJugadores[i].numero;
     nombre = arrayJugadores[i].nombre;
-	  numero='';
+    numero = '';
     if (division.trim() == categoria.trim() || division.trim() == 'PROMOCION') {
-      $("#jugador" + jugador[1] + "_1").append("<option value='" + "-" + numero + "-" + nombre + "'>" + numero + " " + nombre + "</option>");
-      $("#jugador" + jugador[1] + "_2").append("<option value='" + "_" + numero + "-" + nombre + "'>" + numero + " " + nombre + "</option>");
+      $("#jugador" + jugador[1] + "_1").append("<option value='" + nombre + "'>" + nombre + "</option>");
+      $("#jugador" + jugador[1] + "_2").append("<option value='" + nombre + "'>" + nombre + "</option>");
     }
   }
 
@@ -291,7 +369,7 @@ function cargaJugadoresXML(idCampo, division) {
         if (i == 1) {
           borrarOptionSelect("jugador" + jugador[1]);
         }
-        $("#jugador" + jugador[1] + "_1").append("<option value='" + socio88t + "-" + numero + "-" + nombre + "'>" + numero + " " + nombre + "</option>");
+        $("#jugador" + jugador[1] + "_1").append("<option value='" + socio88t + nombre + "'>" + numero + " " + nombre + "</option>");
         $("#jugador" + jugador[1] + "_2").append("<option value='" + socio88t + "_" + numero + "-" + nombre + "'>" + numero + " " + nombre + "</option>");
 
       });
@@ -320,8 +398,7 @@ $(document).ready(function () {
       muestraInforme();
     }
   });
-	
-		
+
 
   ponColorAlDia();
   ponColorCategoria();
