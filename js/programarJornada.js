@@ -39,7 +39,7 @@ function pinta_dias() {
     var arrJugadores = dameJugadores();
     var jugadores = '';
     jugadores = completaJugadores(arrJugadores, categoria_seleccionada);
-    comando += "<tr><td><input type='date' name='" + i + "_fecha' id='" + i + "_id_fila' value='" + dia_inicio + "' ></td>";
+    comando += "<tr><td><input type='date' name='" + i + "_fecha' id='" + i + "_id_fecha' value='" + dia_inicio + "' ></td>";
     comando += "<td>" + dameDiaSemana(dia_inicio) + "</td>";
     comando += "<td><select name='" + i + "_hora'><option value='0'>Elige Horario</option>" + horarios + "</select></td>";
     comando += "<td><select name='" + i + "-categoria' id='" + i + "-categoria'><option value='0'>Elige categoria</option>" + categorias
@@ -179,6 +179,14 @@ $(document).ready(function (e) {
     cambia_fila_jugadores(id_elemento, valor_elemento);
 
   });
+	$("body").on("change", "input[id$=fecha]", function (event) {
+    event.preventDefault();
+    var id_elemento = this.id;
+    id_elemento = "#" + id_elemento;
+    var valor_elemento = $(id_elemento).val();
+   alert(dameDiaSemana(valor_elemento));
+
+  });
   var primerSabado = damePrimerSabado();
   $("[id^=id_]").change(function () {
     var numero_partidos = $("#id_numero_partidos").val();
@@ -198,8 +206,11 @@ $(document).ready(function (e) {
   $("#id_btn_generar").on("click", function () {
     pinta_dias();
   })
-
-  /*---------------------------*/
+	
+$("input[id$=_fecha]").change(function () {
+	alert("hola");
+});
+	/*---------------------------*/
 
 
 });

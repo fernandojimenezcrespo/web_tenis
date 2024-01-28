@@ -28,11 +28,12 @@ var obj = JSON.parse(texto);*/
     + '{"categoria": " PLATA ","numero": " 9 ","nombre":  " 9 LUIS MIGUEL"},'
     + '{"categoria": " PLATA ","numero": " 10 ","nombre": " 10 EDUARDO LOPEZ"},'
     + '{"categoria": " PLATA ","numero": " 11 ","nombre": " 11 CESAR MANUEL  "},'
-    + '{"categoria": " BRONCE ","numero": " 1 ","nombre": "  1 LUIS BLANCO "},'
+  	+ '{"categoria": " PLATA ","numero": " 12 ","nombre": " 12 LUIS BLANCO  "},'
+    + '{"categoria": " BRONCE ","numero": " 1 ","nombre": "  1 CARLA MARTIN "},'
     + '{"categoria": " BRONCE ","numero": " 2 ","nombre": "  2 MARIUS "},'
     + '{"categoria": " BRONCE ","numero": " 3 ","nombre": "  3 PACO GALAN   "},'
     + '{"categoria": " BRONCE ","numero": " 4 ","nombre": "  4 ANTONIO (Yedra)"},'
-    + '{"categoria": " BRONCE ","numero": " 5 ","nombre": "  5 M.ANGEL ABAD "},'
+    + '{"categoria": " BRONCE ","numero": " 5 ","nombre": "  5 (retirado) ABAD "},'
     + '{"categoria": " BRONCE ","numero": " 6 ","nombre": "  6 VICTOR BLQZ  "},'
     + '{"categoria": " BRONCE ","numero": " 7 ","nombre": " 7 MARIANO HERRANZ   "},'
     + '{"categoria": " BRONCE ","numero": " 8 ","nombre": "  8 ALEXIS "},'
@@ -131,7 +132,7 @@ function muestraInforme() {
   $("#id_informe").append("<h2>LIGA 2019/2020 88t</H2>");
 
   $("#id_informe").append("<table id='id_tabla_informe' class='table table-bordered table-striped' summary='resumen de tabla'>"
-    + "<tr><th>FECHA</th><th>DIA</th><th>HORA</th> <th>CATEGORIA</th><th>JUGADOR 1</th> <th>JUGADOR 2</th></tr>"
+    + "<tr><th>FECHA</th><th>DIA</th><th>HORA</th> <th>CATEGORIA</th><th>JUGADOR 1</th> <th>JUGADOR 2</th><th>INSTALACIONES AJENAS</th></tr>"
     + "</table>");
 
   //$("#id_tabla_informe").append("<tr><td colspan='7'>Partidos del fin de semana de:"+$("#fecha").val()+"</td></tr>");
@@ -142,15 +143,18 @@ function muestraInforme() {
       + "</td><td>" + $("#hora_1").val()
       + "</td><td>" + $("#categoria_1").val().toUpperCase()
       + "</td><td>" + $("#jugador1_1").val().substr(3, 30) + "</td>"
-      + "<td>" + $("#jugador1_2").val().substr(3, 30) + "</td>"
+      + "<td>" + $("#jugador1_2").val().substr(3, 30) + "</td><td></td>"
       + "</tr>");
   }
 	else {
+		var pistaAjena='';
+		if ($('#fuera1').is(':checked')) pistaAjena="PARTIDO JUGADO PISTA AJENA";
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_1").val()
       + "<td>" + $("#dia_1").val()
       + "</td><td>" + $("#hora_1").val()
       + "</td><td>" + $("#categoria_1").val().toUpperCase()
       + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+	  + "<td>"+pistaAjena+"</td>"
       + "</tr>");
   }
   if (($("#jugador2_1").val().substr(3, 2)) != "") {
@@ -163,11 +167,14 @@ function muestraInforme() {
       + "</tr>");
   }
 	else {
+		var pistaAjena='';
+		if ($('#fuera2').is(':checked')) pistaAjena="PARTIDO JUGADO PISTA AJENA";
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_2").val()
       + "<td>" + $("#dia_2").val()
       + "</td><td>" + $("#hora_2").val()
       + "</td><td>" + $("#categoria_2").val().toUpperCase()
       + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+	  + "<td>"+pistaAjena+"</td>"
       + "</tr>");
   }
   if (($("#jugador3_1").val().substr(3, 2)) != "") {
@@ -177,14 +184,18 @@ function muestraInforme() {
       + "</td><td>" + $("#categoria_3").val().toUpperCase()
       + "</td><td>" + $("#jugador3_1").val().substr(3, 30) + "</td>"
       + "<td>" + $("#jugador3_2").val().substr(3, 30) + "</td>"
+	+ "<td> </td>"						  
       + "</tr>");
   }
 	else {
+		var pistaAjena='';
+		if ($('#fuera3').is(':checked')) pistaAjena="PARTIDO JUGADO PISTA AJENA";
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_3").val()
       + "<td>" + $("#dia_3").val()
       + "</td><td>" + $("#hora_3").val()
       + "</td><td>" + $("#categoria_3").val().toUpperCase()
       + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+	 + "<td>"+pistaAjena+"</td>"
       + "</tr>");
   }
   if (($("#jugador4_1").val().substr(3, 2)) != "") {
@@ -197,11 +208,14 @@ function muestraInforme() {
       + "</tr>");
   }
 	else {
+		var pistaAjena='';
+		if ($('#fuera4').is(':checked')) pistaAjena="PARTIDO JUGADO PISTA AJENA";
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_4").val()
       + "<td>" + $("#dia_4").val()
       + "</td><td>" + $("#hora_4").val()
       + "</td><td>" + $("#categoria_4").val().toUpperCase()
       + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+		+ "<td>"+pistaAjena+"</td>"						  
       + "</tr>");
   }
   if (($("#jugador5_1").val().substr(3, 2)) != "") {
@@ -214,11 +228,14 @@ function muestraInforme() {
       + "</tr>");
   }
 	else {
+		var pistaAjena='';
+		if ($('#fuera5').is(':checked')) pistaAjena="PARTIDO JUGADO PISTA AJENA";
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_5").val()
       + "<td>" + $("#dia_5").val()
       + "</td><td>" + $("#hora_5").val()
       + "</td><td>" + $("#categoria_5").val().toUpperCase()
       + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+	+ "<td>"+pistaAjena+"</td>"
       + "</tr>");
   }
 
@@ -232,11 +249,14 @@ function muestraInforme() {
       + "<td>" + $("#jugador6_2").val().substr(3, 30) + "</td>"
       + "</tr>");
   } else {
+	  var pistaAjena='';
+		if ($('#fuera6').is(':checked')) pistaAjena="PARTIDO JUGADO PISTA AJENA";
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_6").val()
       + "<td>" + $("#dia_6").val()
       + "</td><td>" + $("#hora_6").val()
       + "</td><td>" + $("#categoria_6").val().toUpperCase()
       + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+	+ "<td>"+pistaAjena+"</td>"
       + "</tr>");
   }
 
@@ -250,11 +270,14 @@ function muestraInforme() {
       + "</tr>");
   }
 	else {
+		var pistaAjena='';
+		if ($('#fuera7').is(':checked')) pistaAjena="PARTIDO JUGADO PISTA AJENA";
     $("#id_tabla_informe").append("<tr><td>" + $("#fecha_7").val()
       + "<td>" + $("#dia_7").val()
       + "</td><td>" + $("#hora_7").val()
       + "</td><td>" + $("#categoria_7").val().toUpperCase()
       + "</td><td colspan=2>LIBERAR LA PISTA </td>"
+	+ "<td>"+pistaAjena+"</td>"
       + "</tr>");
   }
 }
@@ -441,6 +464,9 @@ $(document).ready(function () {
     $("#" + idCampoDia).val(semana[fecha.getDay()]);
     ponColorAlDia();
   });
+	$("#fecha_1").change(function(){
+		var valor=$("#fecha_1").val();
+	})
 
 
 });
