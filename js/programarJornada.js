@@ -20,6 +20,7 @@ function devuelveFechaConCeros(anyo, mes, dia) {
 
 function pinta_dias() {
   $("#id_tabla").remove();
+  $("#div_CamposObservacion").empty();
   $("#div_tablaEntera").append("<table class='table table-responsive' id='id_tabla'></table>");
   var numero_partidos = $("#id_numero_partidos").val();
   var dia_inicio = $("#id_dia_inicio").val();
@@ -40,7 +41,7 @@ function pinta_dias() {
     var jugadores = '';
     jugadores = completaJugadores(arrJugadores, categoria_seleccionada);
     comando += "<tr><td><input type='date' name='" + i + "_fecha' id='" + i + "_id_fecha' value='" + dia_inicio + "' ></td>";
-    comando += "<td>" + dameDiaSemana(dia_inicio) + "</td>";
+    comando += "<td>" + dameDiaSemana(dia_inicio, i) + "</td>";
     comando += "<td><select name='" + i + "_hora'><option value='0'>Elige Horario</option>" + horarios + "</select></td>";
     comando += "<td><select name='" + i + "-categoria' id='" + i + "-categoria'><option value='0'>Elige categoria</option>" + categorias
       + "</select></td>";
@@ -51,8 +52,10 @@ function pinta_dias() {
     comando += "</tr>"
     $("#id_tabla").append(comando);
 
-  }
 
+  }
+  $("#div_CamposObservacion").append("JUGADOR DESCANSA:<input type='text' size=100 placeholder='introduce quien descansa'>");
+  $("#div_CamposObservacion").append("<hr>OBSERVACIONES:<input type='text' size=100 placeholder='introduce OBSERVACIONES'>");
 }
 
 function completaJugadores(arrJugadores, categoria_seleccionada) {
@@ -73,16 +76,24 @@ function completa_horarios(fila) {
   var selecionado = '';
   if (fila == 0 || fila == 4) selecionado = 'selected';
   else selecionado = '';
-  var comando = "<option value=1 " + selecionado + ">10:00</option>";
+  var comando = "<option value=10 " + selecionado + ">10:00</option>";selecionado = '';
+   comando += "<option value=11 " + selecionado + ">11:00</option>";selecionado = '';
   if (fila == 1 || fila == 5) selecionado = 'selected';
   else selecionado = '';
-  comando += "<option value=2 " + selecionado + ">12:00</option>";
+  comando += "<option value=12 " + selecionado + ">12:00</option>";selecionado = '';
+	comando += "<option value=13 " + selecionado + ">13:00</option>";selecionado = '';
+	comando += "<option value=14" + selecionado + ">14:00</option>";selecionado = '';
+	comando += "<option value=15 " + selecionado + ">15:00</option>";selecionado = '';
   if (fila == 2) selecionado = 'selected';
   else selecionado = '';
-  comando += "<option value=3 " + selecionado + ">16:00</option>";
+  comando += "<option value=16 " + selecionado + ">16:00</option>";selecionado = '';
+	comando += "<option value=17 " + selecionado + ">17:00</option>";selecionado = '';
+	
   if (fila == 3) selecionado = 'selected';
   else selecionado = '';
-  comando += "<option value=4 " + selecionado + ">18:00</option>";
+  comando += "<option value=18 " + selecionado + ">18:00</option>";selecionado = '';
+	comando += "<option value=19 " + selecionado + ">19:00</option>";selecionado = '';
+	comando += "<option value=20 " + selecionado + ">20:00</option>";selecionado = '';
   return comando;
 
 
@@ -103,39 +114,39 @@ function completa_categorias(categoria_seleccionada) {
 
 }
 
-function dameDiaSemana(dia) {
+function dameDiaSemana(dia, fila) {
   var date = dia.split("-");
   var mes = parseInt(date[1]) - 1;
   var fecha_calculada = new Date(date[0], mes, date[2]);
-  var diaSemana = literalDia(fecha_calculada.getDay());
+  var diaSemana = literalDia(fecha_calculada.getDay(), fila);
 
   comando = diaSemana;
   return comando;
 }
 
 
-function literalDia(dia) {
+function literalDia(dia, fila) {
   switch (dia) {
     case 0:
-      return "<td><button type='button' class='btn btn-outline-danger'>DOMINGO</button></td>";
+      return "<td id='fila_" + fila + "'><input type='button' class='btn btn-outline-danger' id='" + fila + "_button' value='DOMINGO'/></td>";
       break;
     case 1:
-      return "<td><button type='button' class='btn btn-outline-dark'>LUNES</button></td>";
+      return "<td id='fila_" + fila + "'><input type='button' class='btn btn-outline-dark' id='" + fila + "_button'  value='LUNES' /></td>";
       break;
     case 2:
-      return "<td><button type='button' class='btn btn-outline-dark'>MARTES</button></td>";
+      return "<td id='fila_" + fila + "'><input type='button' class='btn btn-outline-dark' id='" + fila + "_button'  value='MARTES' /></td>";
       break;
     case 3:
-      return "<td><button type='button' class='btn btn-outline-dark'>MIERCOLES</button></td>";
+      return "<td id='fila_" + fila + "'><input type='button' class='btn btn-outline-dark' id='" + fila + "_button'  value='MIERCOLES' /></td>";
       break;
     case 4:
-      return "<td><button type='button' class='btn btn-outline-dark'>JUEVES</button></td>";
+      return "<td id='fila_" + fila + "'><input type='button' class='btn btn-outline-dark' id='" + fila + "_button'  value='JUEVES' /></td>";
       break;
     case 5:
-      return "<td><button type='button' class='btn btn-outline-dark'>VIERNES</button></td>";
+      return "<td id='fila_" + fila + "'><input type='button' class='btn btn-outline-dark' id='" + fila + "_button'  value='VIERNES' /></td>";
       break;
     case 6:
-      return "<td><button type='button' class='btn btn-outline-success'>SABADO</button></td>";
+      return "<td id='fila_" + fila + "'><input type='button' class='btn btn-outline-success' id='" + fila + "_button'  value='SABADO' /></td>";
       break;
 
   }
@@ -179,12 +190,18 @@ $(document).ready(function (e) {
     cambia_fila_jugadores(id_elemento, valor_elemento);
 
   });
-	$("body").on("change", "input[id$=fecha]", function (event) {
+  $("body").on("change", "input[id$=fecha]", function (event) {
     event.preventDefault();
     var id_elemento = this.id;
+    var fila = "#fila_" + id_elemento.substr(0, 1);
+    $(fila).empty();
     id_elemento = "#" + id_elemento;
-    var valor_elemento = $(id_elemento).val();
-   alert(dameDiaSemana(valor_elemento));
+    var comando = (dameDiaSemana($(id_elemento).val(), id_elemento.substr(0, 2)));
+    comando = comando.trim();
+    var longitud = comando.length;
+    longitud = parseInt(longitud) - parseInt(22);
+    $(fila).append(comando);
+
 
   });
   var primerSabado = damePrimerSabado();
@@ -206,11 +223,11 @@ $(document).ready(function (e) {
   $("#id_btn_generar").on("click", function () {
     pinta_dias();
   })
-	
-$("input[id$=_fecha]").change(function () {
-	alert("hola");
-});
-	/*---------------------------*/
+
+  $("input[id$=_fecha]").change(function () {
+    alert("hola");
+  });
+  /*---------------------------*/
 
 
 });
