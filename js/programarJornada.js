@@ -18,6 +18,48 @@ function devuelveFechaConCeros(anyo, mes, dia) {
   return date;
 }
 
+function pinta_negrilla_jugadores() {
+  $('select[id*="-jugador-"]').each(function () {
+    var id = $(this).attr('id');
+    var valor = $(this).val();
+    if (valor != '0')
+      $(this).css({
+        'font-weight': 'bold'
+      });
+    else
+      $(this).css({
+        'font-weight': ''
+      });
+
+
+  })
+}
+
+function pinta_color_categoria() {
+  $('select[id$="-categoria"]').each(function () {
+    // Acciones que quieres realizar en cada iteración
+    var id = ($(this).attr('id'));
+    var valor = $(this).val();
+    if (valor == 'ORO')
+      $(this).css({
+        'color': '#EFB810', // Cambia 'blue' al color que desees
+        'font-weight': 'bold' // Aplicar negrita
+      });
+    if (valor == 'PLATA')
+      $(this).css({
+        'color': 'BLUE', // Cambia 'blue' al color que desees
+        'font-weight': 'bold' // Aplicar negrita
+      });
+    if (valor == 'BRONCE')
+      $(this).css({
+        'color': '#000000', // Cambia 'blue' al color que desees
+        'font-weight': 'bold' // Aplicar negrita
+      });
+
+
+  });
+}
+
 function pinta_dias() {
   $("#id_tabla").remove();
   $("#div_CamposObservacion").empty();
@@ -36,13 +78,13 @@ function pinta_dias() {
     var comando = '';
     var categoria_seleccionada = $("#id_categoria").val();
     var categorias = completa_categorias(categoria_seleccionada);
-    var horarios = completa_horarios(i);
+    var horarios = completa_horarios(i, numero_partidos);
     var arrJugadores = dameJugadores();
     var jugadores = '';
     jugadores = completaJugadores(arrJugadores, categoria_seleccionada);
     comando += "<tr><td><input type='date' name='" + i + "_fecha' id='" + i + "_id_fecha' value='" + dia_inicio + "' ></td>";
     comando += "<td>" + dameDiaSemana(dia_inicio, i) + "</td>";
-    comando += "<td><select name='" + i + "_hora'><option value='0'>Elige Horario</option>" + horarios + "</select></td>";
+    comando += "<td><select name='" + i + "_hora' id='" + i + "_hora'><option value='0'>Elige Horario</option>" + horarios + "</select></td>";
     comando += "<td><select name='" + i + "-categoria' id='" + i + "-categoria'><option value='0'>Elige categoria</option>" + categorias
       + "</select></td>";
     comando += "<td><select name='" + i + "-jugador-A' id='" + i + "-jugador-A'><option value='0'>Elige Jugador A</option>" + jugadores
@@ -72,28 +114,39 @@ function completaJugadores(arrJugadores, categoria_seleccionada) {
   return jugadores;
 }
 
-function completa_horarios(fila) {
+function completa_horarios(fila, numero_partidos) {
   var selecionado = '';
-  if (fila == 0 || fila == 4) selecionado = 'selected';
+  if (fila == 0 || fila == numero_partidos - 2) selecionado = 'selected';
   else selecionado = '';
-  var comando = "<option value=10 " + selecionado + ">10:00</option>";selecionado = '';
-   comando += "<option value=11 " + selecionado + ">11:00</option>";selecionado = '';
-  if (fila == 1 || fila == 5) selecionado = 'selected';
+  var comando = "<option value='10:00' " + selecionado + ">10:00</option>";
+  selecionado = '';
+  comando += "<option value='11:00' " + selecionado + ">11:00</option>";
+  selecionado = '';
+  if (fila == 1 || fila >= numero_partidos - 1) selecionado = 'selected';
   else selecionado = '';
-  comando += "<option value=12 " + selecionado + ">12:00</option>";selecionado = '';
-	comando += "<option value=13 " + selecionado + ">13:00</option>";selecionado = '';
-	comando += "<option value=14" + selecionado + ">14:00</option>";selecionado = '';
-	comando += "<option value=15 " + selecionado + ">15:00</option>";selecionado = '';
+  comando += "<option value='12:00' " + selecionado + ">12:00</option>";
+  selecionado = '';
+  comando += "<option value='13:00' " + selecionado + ">13:00</option>";
+  selecionado = '';
+  comando += "<option value='14:00'" + selecionado + ">14:00</option>";
+  selecionado = '';
+  comando += "<option value='15:00' " + selecionado + ">15:00</option>";
+  selecionado = '';
   if (fila == 2) selecionado = 'selected';
   else selecionado = '';
-  comando += "<option value=16 " + selecionado + ">16:00</option>";selecionado = '';
-	comando += "<option value=17 " + selecionado + ">17:00</option>";selecionado = '';
-	
+  comando += "<option value='16:00' " + selecionado + ">16:00</option>";
+  selecionado = '';
+  comando += "<option value='17:00' " + selecionado + ">17:00</option>";
+  selecionado = '';
+
   if (fila == 3) selecionado = 'selected';
   else selecionado = '';
-  comando += "<option value=18 " + selecionado + ">18:00</option>";selecionado = '';
-	comando += "<option value=19 " + selecionado + ">19:00</option>";selecionado = '';
-	comando += "<option value=20 " + selecionado + ">20:00</option>";selecionado = '';
+  comando += "<option value='18:00' " + selecionado + ">18:00</option>";
+  selecionado = '';
+  comando += "<option value='19:00' " + selecionado + ">19:00</option>";
+  selecionado = '';
+  comando += "<option value='20:00' " + selecionado + ">20:00</option>";
+  selecionado = '';
   return comando;
 
 
@@ -180,7 +233,39 @@ function cambia_fila_jugadores(fila, categoria) {
   $(combo_jugadorB).append("<option value='0'>Elige Jugador A</option>" + jugadores);
 
 }
+
+function generaInforme() {
+  var textoInforme = "<table class='table' >"
+  $("#id_tabla input[id$=fecha]").each(function () {
+
+    var elemento = "#" + this.id;
+    var fila = elemento.substr(1, 1);
+    textoInforme += "<tr><td>" + $(elemento).val() + "</td>";
+    elemento = "#" + fila + "_button";
+    textoInforme += "<td>" + $(elemento).val() + "</td>";
+    elemento = "#" + fila + "_hora";
+    textoInforme += "<td>" + $(elemento).val() + "</td>";
+    elemento = "#" + fila + "-categoria";
+    textoInforme += "<td>" + $(elemento).val() + "</td>";
+    elemento = "#" + fila + "-jugador-A";
+    if ($(elemento).val() != 0) {
+      textoInforme += "<td>" + $(elemento).val() + "</td>";
+      elemento = "#" + fila + "-jugador-B	";
+      textoInforme += "<td>" + $(elemento).val() + "</td>";
+    } else {
+      textoInforme += "<td colsapan='2'>LIBERAD PISTA</td>";
+    }
+
+    textoInforme += "</tr>";
+
+
+    //});
+  });
+  return textoInforme += "</table>";
+}
+//------------------------------------------------------------------------------------------------//
 $(document).ready(function (e) {
+  $("#btn-generarInforme").hide();
   /* ESTO LO PONGO PARA CAPTURAR EL EVENTO CHANGE DE LOS CAMBIOS DE CATEGORIA CONCRETO.*/
   $("body").on("change", "select[id$=-categoria]", function (event) {
     event.preventDefault();
@@ -188,7 +273,11 @@ $(document).ready(function (e) {
     id_elemento = "#" + id_elemento;
     var valor_elemento = $(id_elemento).val();
     cambia_fila_jugadores(id_elemento, valor_elemento);
+    pinta_color_categoria();
 
+  });
+  $("body").on("change", "select[id*=-jugador-]", function (event) {
+    pinta_negrilla_jugadores()
   });
   $("body").on("change", "input[id$=fecha]", function (event) {
     event.preventDefault();
@@ -204,6 +293,8 @@ $(document).ready(function (e) {
 
 
   });
+
+
   var primerSabado = damePrimerSabado();
   $("[id^=id_]").change(function () {
     var numero_partidos = $("#id_numero_partidos").val();
@@ -221,13 +312,33 @@ $(document).ready(function (e) {
 
   /*------------------------------------*/
   $("#id_btn_generar").on("click", function () {
+    $("#btn-generarInforme").show();
+    $("#div_tabla").show();
+    $("#div_generarInforme").empty();
+    $("#div_generarInforme").hide();
     pinta_dias();
+    pinta_color_categoria();
   })
 
-  $("input[id$=_fecha]").change(function () {
-    alert("hola");
-  });
+
   /*---------------------------*/
+  $("#btn-generarInforme").click(function () {
+    var kk = $("#btn-generarInforme").text();
+    if ($("#btn-generarInforme").text() == 'Visualizar Informe') {
+      $("#btn-generarInforme").text('Visualizar Horarios');
+      $("#div_generarInforme").empty();
+      var textoInforme = generaInforme();
+      $("#div_generarInforme").show();
+      $("#div_generarInforme").append(textoInforme);
+      $("#div_tabla").hide();
+
+    } else {
+      $("#btn-generarInforme").text('Visualizar Informe');
+      $("#div_generarInforme").hide();
+      $("#div_tabla").show();
+    }
+
+  });
 
 
 });

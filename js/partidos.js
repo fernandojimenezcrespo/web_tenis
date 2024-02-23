@@ -129,7 +129,7 @@ function muestraInforme() {
   $("#id_div_tabla").hide();
   $("#id_div_informe").show();
   $("#id_informe").children().remove();
-  $("#id_informe").append("<h2>LIGA 2019/2020 88t</H2>");
+  $("#id_informe").append("<h2>LIGA 2023/2024 88t</H2>");
 
   $("#id_informe").append("<table id='id_tabla_informe' class='table table-bordered table-striped' summary='resumen de tabla'>"
     + "<tr><th>FECHA</th><th>DIA</th><th>HORA</th> <th>CATEGORIA</th><th>JUGADOR 1</th> <th>JUGADOR 2</th><th>INSTALACIONES AJENAS</th></tr>"
